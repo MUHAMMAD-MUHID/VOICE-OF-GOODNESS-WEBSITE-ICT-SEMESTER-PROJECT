@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Of Goodness | Supplications</title>
+    <link rel="stylesheet" href="supplications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="page"> <div id="logo"><img src="logo1.png" height="115px" width="140px"></div>
+    <div class="navbar">    
+      <a href="home.html">HOME</a> 
+      <a href="zakat.html">ZAKAT CALCULATOR</a>
+      <a href="tasbeeh-counter.html">TASBEEH COUNTER</a>
+      <a href="prayer.html">PRAYER</a>  
+      <a href="supplications.html">SUPPLICATIONS</a> 
+      <a href="contactus.html">CONTACT US</a>    
+       </div>    
+    <div id="banner"> 
+         <div id="wordz">
+                <img src="dua.png">
+         </div>     
+         <div id="des"> 
+            <strong>" I will respond to you. " (Quran, Surah Ghafir 40:60)</strong>
+       </div><br /><BR />
+       <h1>Important Supplications In Islam</h1>
+       <table id="duatable">
+         <tr>
+            <th>ENGLISH</th>
+           <th>ARABIC</th>
+           <th>ENGLISH</th>  
+           <th>ARABIC</th>            
+         </tr>
+         <tr>
+           <td>Allah is the Greatest</td>
+           <td>الله أَكْبَر</td>
+           <td>There is no god but Allah</td>
+           <td>لَا إِلٰهَ إِلَّا اللهُ</td>      
+         </tr>
+         <tr>
+            <td> Glory be to Allah</td>
+            <td>سُبْحَانَ اللهِ</td>
+            <td>All praise is due to Allah</td>
+        <td>الْحَمْدُ لِلّهِ</td>  
+        </tr>
+          <tr>
+            <td>I seek forgiveness from Allah</td>
+            <td>أَسْتَغْفِرُ اللهَ</td>
+            <td>If Allah wills</td>
+            <td>إِنْ شَاءَ اللهُ</td>
+          </tr>
+          <tr>
+            <td>Glory is to Allah and praise</td>
+            <td>سُبْحَانَ اللهِ وَبِحَمْدِهِ</td>
+            <td>Allah is Sufficient for me; there is no deity except Him</td>
+            <td>حَسْبِيَ اللّٰهُ لَا إِلٰهَ إِلَّا هُوَ</td>
+          </tr>
+          <tr>
+            <td> There is no power nor strength except through Allah</td>
+            <td>لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ</td>
+            <td>In the name of Allah, the Most Gracious, the Most Merciful</td>
+            <td>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</td>
+          </tr>
+        </table>   
+    </div>
+    <div id="footer">
+        <footer> 
+                       <div id="SOCIALICONS"> 
+                            <a href="https://www.facebook.com/profile.php?id=100086742003346&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://youtube.com/@shabeduaofficial?si=RWKEU1YRgCCOLapR" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="shabedua2022@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://maps.app.goo.gl/PmfcCVYvbK6pggY2A" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div id="footerlink" >|
+                          <a href="home.html"style="text-decoration: none;"><strong>Home</strong></a> |----------|
+                          <a href="zakat.html"style="text-decoration: none;"><strong>Zakat</strong></a> |----------|
+                          <a href="tasbeeh-counter.html"style="text-decoration: none;"><strong>Tasbeeh-Counter</strong></a> |----------|
+                          <a href="prayer.html"style="text-decoration: none;"><strong>Prayer</strong></a> |----------|
+                          <a href="supplications.html"style="text-decoration: none;"><strong>Supplications</strong></a> |----------|
+                          <a href="contactus.html"style="text-decoration: none;"><strong>Contact Us</strong></a> |----------|
+                          <a href="pp.html"style="text-decoration: none;"><strong>Privacy Policy</strong></a>|
+                           
+                </div>                  
+            Copyright © 2023 Voice Of Goodness. All Rights Reserved.
+        </footer>  
+    </div>
+    <script>
+    function calculateZakat() {
+        var wealthValue = parseFloat(document.getElementById('wealth-value').value) || 0;
+        var nisabThreshold = parseFloat(document.getElementById('nisab-threshold').value) || 0;
+        // Nisab value (minimum amount required for Zakat)
+   if (wealthValue > nisabThreshold) {
+            var zakatAmount = 0.025 * wealthValue;
+            document.getElementById('zakat-result').innerHTML = "<p>Your Zakat amount is: " + zakatAmount.toFixed(2) + "Rs</p>";
+        } else {
+            document.getElementById('zakat-result').innerHTML = "<p>You are ineligible to give Zakat</p>";
+        }
+    }
+</script>
+    </body>
+</html>

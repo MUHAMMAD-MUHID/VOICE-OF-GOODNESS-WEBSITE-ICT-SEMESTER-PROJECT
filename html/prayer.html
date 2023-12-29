@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Of Goodness | Prayer</title>
+    <link rel="stylesheet" href="prayer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="page"> <div id="logo"><img src="logo1.png" height="115px" width="140px"></div>
+    <div class="navbar">    
+      <a href="home.html">HOME</a> 
+      <a href="zakat.html">ZAKAT CALCULATOR</a>
+      <a href="tasbeeh-counter.html">TASBEEH COUNTER</a>
+      <a href="prayer.html">PRAYER</a>  
+      <a href="supplications.html">SUPPLICATIONS</a> 
+      <a href="contactus.html">CONTACT US</a>  
+       </div>    
+    <div id="banner"> 
+         <div id="wordz">
+                <img src="namazpng.png">
+         </div>     <div id="des"> 
+            <strong>"Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance."</strong>
+       </div><br /><BR />
+       <h1>Namaz Rakat Table</h1>
+       <table id="namazTable">
+         <tr>
+           <th>NAMAZ</th>
+           <th>SUNNAH</th>
+           <th>FARDH</th>
+           <th>NAFL</th>
+           <th>WITR</th>
+         </tr>
+         <tr>
+           <td>FAJR</td>
+           <td>2</td>
+           <td>2</td>
+           <td>-</td>
+           <td>-</td>
+         </tr>
+         <tr>
+           <td>DHUHR</td>
+           <td>4+2</td>
+           <td>4</td>
+           <td>2</td>
+           <td>-</td>
+         </tr>
+         <tr>
+           <td>ASR</td>
+           <td>4</td>
+           <td>4</td>
+           <td>-</td>
+           <td>-</td>
+         </tr>
+         <tr>
+           <td>MAGHRIB</td>
+           <td>2</td>
+           <td>3</td>
+           <td>2</td>
+           <td>-</td>
+         </tr>
+         <tr>
+           <td>ISHA</td>
+           <td>4+2</td>
+           <td>4</td>
+           <td>2+2</td>
+           <td>3 (Wajib)</td>
+         </tr>
+       </table>   
+    </div>
+    <div id="footer">
+        <footer> 
+                       <div id="SOCIALICONS"> 
+                            <a href="https://www.facebook.com/profile.php?id=100086742003346&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://youtube.com/@shabeduaofficial?si=RWKEU1YRgCCOLapR" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="shabedua2022@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://maps.app.goo.gl/PmfcCVYvbK6pggY2A" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div id="footerlink" >|
+                          <a href="home.html"style="text-decoration: none;"><strong>Home</strong></a> |----------|
+                          <a href="zakat.html"style="text-decoration: none;"><strong>Zakat</strong></a> |----------|
+                          <a href="tasbeeh-counter.html"style="text-decoration: none;"><strong>Tasbeeh-Counter</strong></a> |----------|
+                          <a href="prayer.html"style="text-decoration: none;"><strong>Prayer</strong></a> |----------|
+                          <a href="supplications.html"style="text-decoration: none;"><strong>Supplications</strong></a> |----------|
+                          <a href="contactus.html"style="text-decoration: none;"><strong>Contact Us</strong></a> |----------|
+                          <a href="pp.html"style="text-decoration: none;"><strong>Privacy Policy</strong></a>|
+                </div>                  
+            Copyright © 2023 Voice Of Goodness. All Rights Reserved.
+        </footer>  
+    </div>
+    <script>
+    function calculateZakat() {
+        var wealthValue = parseFloat(document.getElementById('wealth-value').value) || 0;
+        var nisabThreshold = parseFloat(document.getElementById('nisab-threshold').value) || 0;
+        // Nisab value (minimum amount required for Zakat)
+   if (wealthValue > nisabThreshold) {
+            var zakatAmount = 0.025 * wealthValue;
+            document.getElementById('zakat-result').innerHTML = "<p>Your Zakat amount is: " + zakatAmount.toFixed(2) + "Rs</p>";
+        } else {
+            document.getElementById('zakat-result').innerHTML = "<p>You are ineligible to give Zakat</p>";
+        }
+    }
+</script>
+    </body>
+</html>

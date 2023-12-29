@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Of Goodness | Tasbeeh Counter</title>
+    <link rel="stylesheet" href="tasbeeh_counter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="page"> <div id="logo"><img src="logo1.png" height="115px" width="140px"></div>
+    <div class="navbar">    
+      <a href="home.html">HOME</a> 
+      <a href="zakat.html">ZAKAT CALCULATOR</a>
+      <a href="tasbeeh-counter.html">TASBEEH COUNTER</a>
+      <a href="prayer.html">PRAYER</a>  
+      <a href="supplications.html">SUPPLICATIONS</a> 
+      <a href="contactus.html">CONTACT US</a>   
+       </div>    
+    <div id="banner"> 
+    <div id="des"> 
+        <h1>Tasbeeh Counter</h1><br /><br />
+           <strong>"So remember Me; I will remember you." (Quran, Surah Al-Baqarah 2:152)     </strong>
+       </div><br /><br />
+       <div id="calculator-container">
+       <div id="counter">0</div>
+       <div style="font-size: 2rem; padding: 1rem; text-align: center;">
+        <button style="cursor: pointer; background-color: #F6BB4E; color: #223438; border: none; border-radius: 5px; padding: 10px 20px; margin: 5px;" onclick="increment()">+1</button>
+        <button style="cursor: pointer; background-color: #F6BB4E; color: #223438; border: none; border-radius: 5px; padding: 10px 20px; margin: 5px;" onclick="reset()">Reset</button>
+      </div>
+       </div>
+    </div>
+    <div id="footer">
+        <footer> 
+                       <div id="SOCIALICONS"> 
+                            <a href="https://www.facebook.com/profile.php?id=100086742003346&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://youtube.com/@shabeduaofficial?si=RWKEU1YRgCCOLapR" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="shabedua2022@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://maps.app.goo.gl/PmfcCVYvbK6pggY2A" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div id="footerlink" >| 
+                          <a href="home.html"style="text-decoration: none;"><strong>Home</strong></a> |----------|
+                          <a href="zakat.html"style="text-decoration: none;"><strong>Zakat</strong></a> |----------|
+                          <a href="tasbeeh-counter.html"style="text-decoration: none;"><strong>Tasbeeh-Counter</strong></a> |----------|
+                          <a href="prayer.html"style="text-decoration: none;"><strong>Prayer</strong></a> |----------|
+                          <a href="supplications.html"style="text-decoration: none;"><strong>Supplications</strong></a> |----------|
+                          <a href="contactus.html"style="text-decoration: none;"><strong>Contact Us</strong></a> |----------|
+                          <a href="pp.html"style="text-decoration: none;"><strong>Privacy Policy</strong></a>|
+                </div>                  
+            Copyright © 2023 Voice Of Goodness. All Rights Reserved.
+        </footer>  
+    </div>
+    <script>
+        let count = 0;
+    
+        function increment() {
+          count++;
+          updateCounter();
+        }
+    
+        function reset() {
+          count = 0;
+          updateCounter();
+        }
+    
+        function updateCounter() {
+          document.getElementById('counter').innerText = count;
+        }
+      </script>
+    </body>
+</html>
